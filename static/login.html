@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Login Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style/bootstrap.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="../style/style.css"/>
+        <script src="../script/jquery-3.1.1.js"></script>
+        <script src="../script/bootstrap.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="../index.html"><span class="pct">D</span>ocument <span class="pct">O</span>nline <span class="pct">VE</span>rification</a>
+            </div>  
+          </div>
+        </nav>
+        <div>
+            <form action="" method="get">
+                <input type="text" name="uName" placeholder="UserName"/><br/><br/>
+                <input type="password" name="pass" placeholder="Password" /><br/>
+                Login As:
+                <select name="cat">
+                    <option value="indi">Individual</option>
+                    <option value="org">Organisational</option>
+                    <option value="inst">Institutional</option>
+                </select><br/>
+                <!--<input type="radio" name="category" value="can"/>Candidate<br/>
+                <input type="radio" name="category" value="org"/>Organisational<br/>
+                <input type="radio" name="category" value="inst"/>Institutional<br/>-->
+                <input type="checkbox" name="remember">Remember Password?
+                <input type="submit" value="Login"><br/>
+                <a href="">Forgot Password</a>
+                <p>Not a Member?<a href="">Sign Up</a></p>
+            </form>
+        </div>
+    </body>
+</html>

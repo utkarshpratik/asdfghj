@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dove Home</title>
+        <link rel="icon" href="images/dovelogo.png" />
+        <link rel="stylesheet" href="style/bootstrap.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style/bootstrap.min.css" />
+        <script src="script/jquery-3.1.1.js"></script>
+        <script src="script/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="style/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="style/bootstrap-theme.css" />
+    </head>
+
+    <!--****************************Main Body Starting***********************-->
+
+    <body style="background-color: #f5f6f7">
+        <div>
+            <header>
+                <nav class="navbar navbar-default fnav">
+
+                    <!--********************Main Banner Starting********************-->
+
+                    <div class="container">
+
+                        <!--********************Title Banner Starting********************-->
+                        
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">
+                                <span class="pct">D</span>ocument 
+                                <span class="pct">O</span>nline
+                                <span class="pct">VE</span>rification
+                            </a>
+                        </div>
+
+                        <!--********************Title Banner Ending********************-->
+
+                        <!--********************Main Menu Starting********************-->
+                        
+                        <div id="myNavbar">
+                            <ul class="nav nav-tabs navbar-right">
+                                <li>
+                                    <a class="dropdown-toggle" style="font-size: medium" data-toggle="modal" data-target="#login">
+                                        <span class="glyphicon glyphicon-log-in"></span>
+                                        <b>Login</b>
+                                    </a>
+                                </li>
+                                <li class="dropdown" style="font-size: medium">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <span class="glyphicon glyphicon-user"></span>
+                                        <b>Registration</b><span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-toggle" href="candreg.html"><b>Candidate</b></a></li>
+                                        <li><a class="dropdown-toggle" href="orgreg.html"><b>Organisation</b></a></li>
+                                        <li><a class="dropdown-toggle" href="instreg.html"><b>Institute</b></a></li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--********************Main Menu Ending********************-->
+
+                    </div>
+                </nav>
+            </header>
+        </div>
+        
+
+        <!--********************Main Banner Ending********************-->
+
+        <!--********************Background Image Starting********************-->
+
+        <br/>
+        <br/>
+
+        <!--<div class="container" style="float: left">
+            <img class="img-responsive" src="images/indexbackground.png" alt=" dove" width="460px" height="460px" > 
+        </div>-->
+
+        <!--********************Background Image Ending********************-->
+
+
+        <!--******************Login Form Starting*****************-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="login" role="dialog">
+            <div class="modal-dialog">
+    
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><span style="color: #00c8ff;">L</span>ogin</h2>
+                    </div>
+                    <form class="form-horizontal" method="get">
+                        
+                        <!--Login Type-->
+
+                        <div class="form-group">
+                        <!--<label class="control-label col-xs-2" for="email">Username/Email:</label>--><br/>
+                            <div class="col-sm-offset-2 col-xs-6">
+                                <select class="form-control" id="category" name="categ" title="Select Login Type">
+                                    <!--<option disabled="disabled" >Select Login Type</option>-->
+                                    <option value="cand">Candidate</option>
+                                    <option value="org">Organisation</option>
+                                    <option value="inst">Institution</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!--Username-->
+
+                        <div class="form-group">
+                        <!--<label class="control-label col-xs-2" for="email">Username/Email:</label>-->
+                            <div class="col-sm-offset-2 col-xs-6">
+                                <input type="text" class="form-control" id="username" name="uName" placeholder="Username">
+                            </div>
+                        </div>
+
+                        <!--Password-->
+                        
+                        <div class="form-group">
+                        <!--<label class="control-label col-xs-2" for="pwd">Password:</label>-->
+                            <div class="col-sm-offset-2 col-xs-6">          
+                                <input type="password" class="form-control" id="pwd" name="pass" placeholder="Password">
+                            </div>
+                        </div>
+                        <!--Remember Me-->
+                        <div class="form-group">        
+                            <div class="col-sm-offset-2 col-xs-4">
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Button-->
+
+                        <div class="form-group">        
+                            <div class="col-sm-offset-2 col-xs-4">
+                                <button type="submit" class="btn btn-default">Login</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!--<div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>-->
+
+                </div>
+            </div>
+        </div>
+
+        <!--********************Login Form Ending********************-->
+
+    </body>
+
+    <!--****************************Main Body Ending***********************-->
+
+</html>
